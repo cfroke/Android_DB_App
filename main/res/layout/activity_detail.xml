@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/water"
+    android:id="@+id/waterbg"
+    tools:ignore="Overdraw">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/editTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editName"
+        android:layout_below="@+id/editName"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Team"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/editEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTeam"
+        android:layout_below="@+id/editTeam"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Event"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"/>
+
+    <EditText
+        android:id="@+id/editTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editEvent"
+        android:layout_below="@+id/editEvent"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Time (hh:mm:ss)"
+        android:inputType="time"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Add"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/editTime"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="68dp"
+        tools:ignore="HardcodedText,UnusedAttribute"/>
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Delete"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/buttonAdd"
+        android:layout_alignBottom="@+id/buttonAdd"
+        android:layout_toEndOf="@+id/buttonAdd"
+        android:layout_marginStart="48dp"
+        tools:ignore="HardcodedText,UnusedAttribute"/>
+</RelativeLayout>
